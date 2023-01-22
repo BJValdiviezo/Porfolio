@@ -1,0 +1,175 @@
+/*Estilos Generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+h1{
+    font-size: 2.5rem;
+}
+.seccion-oscura{
+    color: #f5f6f7;
+    background-color: #1b1b32;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Days One', sans-serif;
+
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+/*Barra de Navegacion*/
+.navbar{
+    padding: 2rem;
+    background-color:#303030;
+}
+.logo{
+    height: 65px;
+    width: 75px;
+}
+/*Seccion Hero*/
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+}
+.hero-img-curriculum{
+ height: 300px;
+ width: 300px;
+ margin: 20px;
+}
+.hero-principal {
+    padding: 3rem;
+}
+.hero-static-txt {
+    color: rgb(168, 38, 98);
+    font-size: 60px;
+    font-weight: 400
+}
+.hero-dynamic-txts {
+    margin-left: 20px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden
+}
+.hero-dynamic-txts li {
+    list-style: none;
+    color: rgb(168, 38, 98);
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite
+}
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+.hero-dynamic-txts li span {
+    position: relative;
+    margin: 2px 0;
+    line-height: 90px;
+}
+.hero-dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 110%;
+    width: 100%;
+    background: #f5f6f7;
+    border-left: 2px solid rgb(168, 38, 98);
+    animation: typing 3s steps(20) infinite
+}
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 30px)
+    }
+    100% {
+        left: 0
+    }
+}
+/*Sobre Mi*/
+.sobre-mi{
+    height: 700px;
+    padding: 20px;
+}
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsividad*/
+@media screen and(max-width:809px){
+    
+}
+
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+/*
+.footer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    background: grey
+}
+.footer-icons {
+    display: flex;
+    align-items: center;
+    column-gap: 25px
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, backgroud-color;
+    transition-duration: 0.25s
+}
+.icon:hover {
+    outline-offset: 4px
+}
+.icon:hover i {
+    animation: shake 0.25s
+}
+.icon--instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    outline-color: #a02d76
+}
+.icon--facebook:hover {
+    background-color: #1da1f2;
+    outline-color: #1da1f2
+}
+.icon--linkedin:hover {
+    background-color: #0077b5;
+    outline-color: #0077b5
+}
+.icon--github:hover {
+    background-color: #2ea44f;
+    outline-color: #2ea44f
+}*/
