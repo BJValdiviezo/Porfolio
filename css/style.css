@@ -94,28 +94,68 @@ h1{
 }
 /*Sobre Mi*/
 .sobre-mi{
-    height: 700px;
+    height: auto;
     padding: 20px;
 }
 .sobre-mi .contenedor{
     max-width: 600px;
     text-align: center;
 }
-/*Experiencia*/
-.experiencia{
+/*Habilidades*/
+.habilidades{
     min-height: 450px;
-    margin:20px 10px;
 }
-.experiencia-coto, .experiencia-radio{
-    font-size: 20px;
-    font-weight: bold;
+.habilidades-icon{
+    list-style: none;
+    font-size: 4.5rem;
+    transition-property:color;
+    transition-duration: 0.25s;
+}
+.habilidades-icon .bi-filetype-html:hover {
+    color: rgb(230,76,24);
+}
+
+.habilidades-icon .bi-filetype-css:hover {
+    color: rgb(0,150,220);
+}
+.habilidades-icon .bi-filetype-js:hover {
+    color: rgb(242,203,0);
+}
+.habilidades-icon .bi-filetype-java:hover {
+    color: rgb(236,32,37);
+}
+.habilidades-icon .bi-git:hover {
+    color: rgb(228,76,48);
+}
+.habilidades-icon .bi-github:hover {
+    color: #2ea44f;
+}
+.habilidades-icon .bi-bootstrap:hover {
+    color: rgb(139,18,252);
+}
+.habilidades-icon .bi-trello:hover {
+    color: rgb(0,107,192);
+}
+/*Experiencia*/
+#experiencia .nav{
+    margin-left: 30px;
+    max-width: 100%;  
+}
+.nav-pills .nav-link{
+    
+    --bs-nav-pills-link-active-bg: rgb(168, 38, 98);
+    --bs-nav-link-color:rgb(168, 38, 98);
+    --bs-nav-link-hover-color: rgb(178, 28, 70);
+}
+.tab-content{
+    justify-content: center;
 }
 /*Proyectos*/
 .carousel-item img{
     filter:blur(5px) brightness(50%);
 }
 .carousel-caption{
-    bottom: 30%;
+    align-items: center;
 }
 .proyecto-link{
     color: rgb(168, 38, 98);
@@ -183,12 +223,62 @@ h1{
 
 
 /*Responsividad*/
-@media screen and(max-width:809px){
-    
+@media screen and (max-width:826px){
+    .hero-static-txt {
+        color: rgb(168, 38, 98);
+        font-size: 40px;
+        font-weight: 400
+    }
+    .hero-dynamic-txts {
+        margin-left: 0px;
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden
+    }
+    .hero-dynamic-txts li {
+        list-style: none;
+        color: rgb(168, 38, 98);
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite
+    }
+    @keyframes slide {
+        100% {
+            top: -360px;
+        }
+    }
+    .hero-dynamic-txts li span {
+     
+        line-height: 90px;
+    }
+    .hero-dynamic-txts li span::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 110%;
+        width: 100%;
+        background: #f5f6f7;
+        border-left: 2px solid rgb(168, 38, 98);
+        animation: typing 3s steps(20) infinite
+    }
+    @keyframes typing {
+        40%, 60% {
+            left: calc(100% + 30px)
+        }
+        100% {
+            left: 0
+        }
+    }
 }
 
 @media screen and (max-width: 767px){
     .navbar-brand{
         display: none;
+    }
+    .seccion-titulo{
+        font-size: 45px;
     }
 }

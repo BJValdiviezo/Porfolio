@@ -47,7 +47,10 @@
             <a class="nav-link " href="#experiencia">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#portafolio">Proyectos</a>
+            <a class="nav-link " href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#proyectos">Proyectos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#contact">Contacto</a>
@@ -93,84 +96,75 @@
     </div>
   </section>
   <!--Experincia-->
-  <section class="experiencia" id="experiencia">
-    <h2 class="experiencia-titulo seccion-titulo">Experiencia</h2>
-    <div class="row  align-items-start shadow-lg">
-      <div class="col-4">
-        <nav id="navbar-experiencia" class="h-100 flex-column align-items-stretch pe-4 border-end">
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link experiencia-coto" href="#coto">Coto Cicsa</a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link ms-3 my-1" href="#item-1-1">Cadete (Sector Linea de Cajas)</a>
-              <a class="nav-link ms-3 my-1" href="#item-1-2">Cajero (Sector Linea de Cajas)</a>
-              <a class="nav-link ms-3 my-1" href="#item-1-3">Auxiliar (Sector Linea de Cajas)</a>
-              <a class="nav-link ms-3 my-1" href="#item-1-4">Postulante a Jefe (Sector Linea de Cajas)</a>
-              <a class="nav-link ms-3 my-1" href="#item-1-5">Auxiliar (Sector Digital)</a>
-              <a class="nav-link ms-3 my-1" href="#item-1-6">Cobrador (Sector Digital)</a>
-            </nav>
-            <a class="experiencia-radio nav-link" href="#radio">Radio Nitro | Radio Tu</a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link ms-3 my-1" href="#radio-operador">Operador de Radio</a>
-            </nav>
-          </nav>
-        </nav>
+  <section class="experiencia bg-light" id="experiencia">
+    <h2 class="experiencia-titulo seccion-titulo ">Experiencia</h2>
+    <nav class="navbar navbar-light bg-light">
+      
+      <div class="container-fluid">
+        <button class="navbar-toggler my-2 btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target=".coto-experiencia" aria-expanded="false" aria-controls="coto-experiencia">
+          <span class="">Coto Cicsa | Noviembre 2010 - Junio 2022</span>
+        </button>
       </div>
-
-      <div class="col-8 my-0">
-        <div data-bs-spy="scroll" data-bs-target="#navbar-experiencia" data-bs-smooth-scroll="true" class="scrollspy-example-2"
-          tabindex="0">
-          <div id="coto">
-            <h4>Coto Cicsa</h4>
-            <p>Noviembre 2010 - Junio 2022</p>
-          </div>
-          <div id="item-1-1">
-            <h5>Cadete</h5>
-            <p>Armado y entrega de pedidos a domicilio, devoluciones de
-              mercadería, cadete administrativo.</p>
-          </div>
-          <div id="item-1-2">
-            <h5>Cajero</h5>
-            <p>Atención al cliente, manipulación de alimentos, manejo de caja
-              con valores, moneda nacional y extranjera, manipulación de tarjetas, posnet.</p>
-          </div>
-          <div id="item-1-3">
-            <h5>Auxiliar</h5>
-            <p>Atención al cliente, personal a cargo,
-              manipulación de moneda nacional, extranjera y un fondo de Tesorería, manejo de
-              tarjetas y Posnet. Organización de envíos a entregar en domicilio. Controles diarios
-              sobre cadetes y cajeros.</p>
-          </div>
-          <div id="item-1-4">
-            <h5>Postulante a Jefe</h5>
-            <p>Manejo de caja, apertura y cierre de sucursal, atención al cliente
-              y resolución de reclamos. Capacitación de personal, control de calidad, productividad y
-              desempeño de cadetes, cajeros, choferes y auxiliares a cargo. A cargo de envíos a
-              domicilio, solicitud de móvil, distribución de pedidos.</p>
-          </div>
-          <div id="item-1-5">
-            <h5>Auxiliar</h5>
-            <p>Atención al cliente, personal a cargo, manipulación de dispositivos
-              de cobro y móviles. Organización de envíos a entregar en domicilio. Controles diarios
-              sobre cadetes y cajeros.</p>
-          </div>
-          <div id="item-1-6">
-            <h5>Cobrador</h5>
-            <p>Armado, entrega y cobro de pedidos a domicilio, devoluciones de
-              mercadería, cadete administrativo.</p>
-          </div>
-          <div id="radio">
-            <h4>Radio Nitro | Radio TU</h4>
-            <p>Marzo 2018 - Diciembre 2019</p>
-          </div>
-          <div id="radio-operador">
-            <h5>Operador de Radio</h5>
-            <p>Manejo de consola de sonido, monitores visuales y auditivos,
-              micrófonos, grabación y edición de programa.</p>
-          </div>
+      
+      <div class=" d-flex align-items-start">
+        <div class=" collapse nav flex-column nav-pills me-3 coto-experiencia" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="cadete-c-tab" data-bs-toggle="pill" data-bs-target="#cadete-c" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Cadete | Sector Cajas</button>
+          <button class="nav-link" id="cajero-c-tab" data-bs-toggle="pill" data-bs-target="#cajero-c" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Cajero | Sector Cajas</button>
+          <button class="nav-link" id="auxiliar-c-tab" data-bs-toggle="pill" data-bs-target="#auxiliar-c" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Auxiliar | Sector Cajas</button>
+          <button class="nav-link" id="post-jefe-c-tab" data-bs-toggle="pill" data-bs-target="#post-jefe-c" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Postulante a Jefe | Sector Cajas</button>
+          <button class="nav-link" id="auxiliar-d-tab" data-bs-toggle="pill" data-bs-target="#auxiliar-d" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Auxiliar | Sector Digital</button>
+          <button class="nav-link" id="cobrador-d-tab" data-bs-toggle="pill" data-bs-target="#cobrador-d" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Cobrador | Sector Digital</button>
+        </div>
+        <div class="tab-content coto-experiencia" id="v-pills-tabContent">
+          <div class="tab-pane fade active" id="cadete-c" role="tabpanel" aria-labelledby="cadete-c-tab" tabindex="0">Armado y entrega de pedidos a domicilio, devoluciones de
+            mercadería, cadete administrativo.</div>
+          <div class="tab-pane fade" id="cajero-c" role="tabpanel" aria-labelledby="cajero-c-tab" tabindex="0">Atención al cliente, manipulación de alimentos, manejo de caja
+            con valores, moneda nacional y extranjera, manipulación de tarjetas, posnet.</div>
+          <div class="tab-pane fade" id="auxiliar-c" role="tabpanel" aria-labelledby="auxiliar-c-tab" tabindex="0">Atención al cliente, personal a cargo,
+            manipulación de moneda nacional, extranjera y un fondo de Tesorería, manejo de
+            tarjetas y Posnet. Organización de envíos a entregar en domicilio. Controles diarios
+            sobre cadetes y cajeros.</div>
+          <div class="tab-pane fade" id="post-jefe-c" role="tabpanel" aria-labelledby="post-jefe-c-tab" tabindex="0">Manejo de caja, apertura y cierre de sucursal, atención al cliente
+            y resolución de reclamos. Capacitación de personal, control de calidad, productividad y
+            desempeño de cadetes, cajeros, choferes y auxiliares a cargo. A cargo de envíos a
+            domicilio, solicitud de móvil, distribución de pedidos.</div>
+          <div class="tab-pane fade" id="auxiliar-d" role="tabpanel" aria-labelledby="auxiliar-d-tab" tabindex="0">Atención al cliente, personal a cargo, manipulación de dispositivos
+            de cobro y móviles. Organización de envíos a entregar en domicilio. Controles diarios
+            sobre cadetes y cajeros.</div>
+          <div class="tab-pane fade" id="cobrador-d" role="tabpanel" aria-labelledby="cobrado-d-tab" tabindex="0">Armado, entrega y cobro de pedidos a domicilio, devoluciones de
+            mercadería, cadete administrativo.</div>
         </div>
       </div>
-    </div>
-    </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler my-2 btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target=".radio" aria-expanded="false" aria-controls="radio">
+          <span class="">Radio Nitro/ Radio Tú | Marzo 2018 - Diciembre 2019</span>
+        </button>
+      </div>
+      
+      <div class=" d-flex align-items-start ">
+        <div class=" collapse nav flex-column nav-pills me-3 radio" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link" id="operador-tab" data-bs-toggle="pill" data-bs-target="#operador" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Operador de Radio</button>
+          
+        </div>
+        <div class="tab-content radio" id="v-pills-tabContent">
+          <div class="tab-pane fade" id="operador" role="tabpanel" aria-labelledby="operador-tab" tabindex="0">Manejo de consola de sonido, monitores visuales y auditivos,
+            micrófonos, grabación y edición de programa.</div>
+      </div>
+    </nav>
+  </section>
+  <!--Habilidades-->
+  <section class="habilidades  seccion-oscura" id="habilidades">
+    <h2 class="habilidades-titulo seccion-titulo">Habilidades</h2>
+    <ul class="container-fluid d-flex flex-wrap justify-content-between d-md-flex align-content-md-center justify-content-md-between ">
+      <li class="habilidades-icon"><i class="bi bi-filetype-html"></i></li>
+      <li class="habilidades-icon"><i class="bi bi-filetype-css"></i></li>
+      <li class="habilidades-icon"><i class="bi bi-filetype-js"></i></li>
+      <li class="habilidades-icon"><i class="bi bi-filetype-java"></i></li>
+      <li class="habilidades-icon"><i class="bi bi-git"></i></li>
+      <li class="habilidades-icon icon-github"><i class="bi bi-github"></i></li>
+      <li class="habilidades-icon"><i class="bi bi-bootstrap"></i></li>
+      <li class="habilidades-icon"><i class="bi bi-trello"></i></li>
+    </ul>
   </section>
   <!--Proyectos-->
   <section class="proyectos" id="proyectos">
@@ -191,8 +185,10 @@
             <h3>Agenda</h3>
             <p>Esta pagina se puede utilizar como anotador de tareas.</p>
             <div class="d-grid gap-2 d-flex flex-row justify-content-center">
-              <a href="https://bjvaldiviezo.github.io/Blog-de-notas/"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
-              <a href="https://github.com/BJValdiviezo/Blog-de-notas"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
+              <a href="https://bjvaldiviezo.github.io/Blog-de-notas/"><button
+                  class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
+              <a href="https://github.com/BJValdiviezo/Blog-de-notas"><button
+                  class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
             </div>
           </div>
         </div>
@@ -202,8 +198,10 @@
             <h3>Encriptador</h3>
             <p>Es una pagina encripta y desencripta mensajes.</p>
             <div class="d-grid gap-2 d-flex flex-row justify-content-center">
-              <a href="https://bjvaldiviezo.github.io/Alura-Challenge---Encriptador/"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
-              <a href="https://github.com/BJValdiviezo/Alura-Challenge---Encriptador"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
+              <a href="https://bjvaldiviezo.github.io/Alura-Challenge---Encriptador/"><button
+                  class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
+              <a href="https://github.com/BJValdiviezo/Alura-Challenge---Encriptador"><button
+                  class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
             </div>
           </div>
         </div>
@@ -213,8 +211,12 @@
             <h3>Barberia Alura</h3>
             <p>Es una pagina acerca de la Barberia Alura.</p>
             <div class="d-grid gap-2 d-flex flex-row justify-content-center">
-              <a href="https://bjvaldiviezo.github.io/Practica-Barberia-Alura---Curso-de-HTTP-y-Css/" type="button"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
-              <a href="https://github.com/BJValdiviezo/Practica-Barberia-Alura---Curso-de-HTTP-y-Css" type="button"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
+              <a href="https://bjvaldiviezo.github.io/Practica-Barberia-Alura---Curso-de-HTTP-y-Css/"
+                type="button"><button class="btn btn-light btn-sm fw-bolder proyecto-link"
+                  type="button">Pagina</button></a>
+              <a href="https://github.com/BJValdiviezo/Practica-Barberia-Alura---Curso-de-HTTP-y-Css"
+                type="button"><button class="btn btn-light btn-sm fw-bolder proyecto-link"
+                  type="button">Codigo</button></a>
             </div>
           </div>
         </div>
@@ -224,8 +226,10 @@
             <h3>Primer Portafolio(2022)</h3>
             <p>Este fue mi primer portafolio realizado.</p>
             <div class="d-grid gap-2 d-flex flex-row justify-content-center">
-              <a href="https://bjvaldiviezo.github.io/Mi-Portafolio/" type="button"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
-              <a href="https://github.com/BJValdiviezo/Mi-Portafolio"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
+              <a href="https://bjvaldiviezo.github.io/Mi-Portafolio/" type="button"><button
+                  class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
+              <a href="https://github.com/BJValdiviezo/Mi-Portafolio"><button
+                  class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
             </div>
           </div>
         </div>
@@ -235,11 +239,13 @@
             <h3>Curriculum (2023)</h3>
             <p>Portafolio actualizado y mejorado.</p>
             <div class="d-grid gap-2 d-flex flex-row justify-content-center">
-              <a href="https://bjvaldiviezo.github.io/Curriculum/"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
-              <a href="https://github.com/BJValdiviezo/Curriculum"><button class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
+              <a href="https://bjvaldiviezo.github.io/Curriculum/"><button
+                  class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Pagina</button></a>
+              <a href="https://github.com/BJValdiviezo/Curriculum"><button
+                  class="btn btn-light btn-sm fw-bolder proyecto-link" type="button">Codigo</button></a>
             </div>
-            
-            
+
+
           </div>
         </div>
       </div>
