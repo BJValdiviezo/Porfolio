@@ -134,7 +134,10 @@ h1{
     color: rgb(139,18,252);
 }
 .habilidades-icon .bi-trello:hover {
-    color: rgb(0,107,192);
+    color: #44546F;
+}
+.habilidades-icon .bi-lightning:hover {
+    color: #0176d3;
 }
 /*Experiencia*/
 #experiencia .nav{
