@@ -24,7 +24,7 @@ h1{
 }
 /*Barra de Navegacion*/
 .navbar{
-    padding: 2rem;
+    /*padding: 2rem;*/
     background-color:#303030;
 }
 .logo{
@@ -42,7 +42,7 @@ h1{
  margin: 20px;
 }
 .hero-principal {
-    padding: 3rem;
+    padding: 2rem;
 }
 .hero-static-txt {
     color: rgb(168, 38, 98);
