@@ -1,11 +1,10 @@
-.resume,
-.projects, 
-.contact{
+.resume{    
     display: none;
+    padding: 10px 20px;
+    align-items: center;
 }
 
 .resume > h1{
-    font-size: 32px;
     font-weight: 700;
     line-height: 28px;
     margin-top: 1vh;
@@ -14,7 +13,7 @@
     width: 45px;
     height: 5px;
     border-radius: 2px;
-    background: #52dee5;
+    background: rgb(168, 38, 98);
     margin: 3.5vh 0 4.5vh 0;
 }
 
@@ -30,14 +29,14 @@
     flex-direction: column;
     align-items: center; 
 }
-.resume .education div:first-child ion-icon, 
-.resume .experience div:first-child ion-icon{
+.resume .education div:first-child i, 
+.resume .experience div:first-child i{
     padding: 13px 14px;
     font-size: 18px;
     color: rgb(168, 38, 98);
     border-radius: 10px;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 0, 0, 0.1);
+    background: rgba(255, 0, 0, 0.05);
 }
 .resume .education div:first-child .point,
 .resume .experience div:first-child .point{
@@ -51,13 +50,13 @@
     width: 1px;
     height: calc(1.5vh + 26px);
     height: 4.8vh;
-    background: rgba(214, 214, 214, 0.1);
+    background: rgb(168, 38, 98);
 }
 .resume .education div:first-child .line2{
     width: 1px;
     height: 13vh;
     height: calc(3vh + 48px + 16px);
-    background: rgba(214, 214, 214, 0.1);
+    background: rgb(168, 38, 98);
 }
 /*-----------------last child-------------------*/
 .resume .education div:last-child > div{
@@ -87,7 +86,7 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 24px;
-    color: #d6d6d6;
+    color: rgb(53, 53, 53);
 }
 
 /*--------------------------*/
@@ -99,21 +98,21 @@
     width: 1px;
     height: calc(4vh + 16px - 13px);
     height: 4.5vh;
-    background: rgba(214, 214, 214, 0.1);
+    background: rgb(168, 38, 98);
 }
 
 .resume .experience > div:first-child .line2{
     width: 1px;
     height: 12.8vh;
     height: calc(3.2vh + 66px);
-    background: rgba(214, 214, 214, 0.1);
+    background: rgb(168, 38, 98);
 }
 
 .resume .experience > div:first-child .line3{
     width: 1px;
     height: 24vh;
     height: calc(3vh + 136px);
-    background: rgba(214, 214, 214, 0.1);
+    background: rgb(168, 38, 98);
 }
 
 .resume .experience > div:last-child .div2{
@@ -121,7 +120,7 @@
 }
 
 .resume .experience > div:last-child p span{
-    color: #d6d6d6;
+    color: rgb(53,53,53);
     font-weight: bold;
 }
 
@@ -146,8 +145,8 @@
     border-left: 1px solid rgba(255, 255, 255, 0.08);
     background: radial-gradient(circle at 0% 100%, #303033 20%, #38393a 40%, #3b3c41 100%);
 }
-.resume > div:last-child a ion-icon{
-    color: rgb(168, 38, 98);
+.resume > div:last-child a i{
+    background-color:black;
     font-size: 20px;
     font-weight: 400;
 }
@@ -203,8 +202,8 @@
     .resume .education, .resume .experience{
         gap: 3.5vw;
     }
-    .resume .education div:first-child ion-icon, 
-    .resume .experience div:first-child ion-icon{
+    .resume .education div:first-child i, 
+    .resume .experience div:first-child i{
         padding: 10px 11px;
         font-size: 16px;
         font-weight: 400;
@@ -273,7 +272,7 @@
         width: 1px;
         height: 24vh;
         height: calc(2vh + 14px * 4 + 22px * 5 + 2px);
-        background: rgba(214, 214, 214, 0.1);
+        background: rgb(168, 38, 98);
     }
     
     .resume .experience > div:last-child .div2{
@@ -305,7 +304,7 @@
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         border-left: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .resume > div:last-child a ion-icon{
+    .resume > div:last-child a i{
         color: rgb(168, 38, 98);
         font-size: 20px;
         font-weight: 400;
@@ -317,7 +316,7 @@
         width: 1px;
         height: 24vh;
         height: calc(2vh + 14px * 6 + 22px * 5 - 6px);
-        background: rgba(214, 214, 214, 0.1);
+        background: rgb(168, 38, 98);
     }
   
 }
@@ -345,7 +344,7 @@
         width: 1px;
         height: 24vh;
         height: calc(2vh + 14px * 6 + 22px * 6 + 8px );
-        background: rgba(214, 214, 214, 0.1);
+        background: rgb(168, 38, 98);
     }
   
 }

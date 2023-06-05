@@ -164,7 +164,7 @@ h1{
     color: rgb(168, 38, 98);
 }
 /*Footer*/
-.icon {
+.icon, .icon img {
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -199,6 +199,10 @@ h1{
 .icon--github:hover {
     background-color: #2ea44f;
     outline-color: #2ea44f;
+}
+.icon--trailhead:hover {
+    background-image: linear-gradient(rgb(140,211,248) 0%, rgb(163,114,181) 49%, rgb(116,27,137) 50%, rgb(255,255,255) 51%, rgb(4,106,56) 52%,rgb(0,154,68) 100%);
+    outline-color: rgb(140,211,248);
 }
 @keyframes shake {
     10% {
