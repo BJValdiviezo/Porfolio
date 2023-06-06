@@ -23,6 +23,8 @@
     width: 100%;
     display: flex; 
     gap: 2vw;
+    padding: 25px 300px;
+    justify-content: center;
 }
 .resume .education div:first-child, .resume .experience div:first-child{
     display: flex;
@@ -92,7 +94,6 @@
 /*--------------------------*/
 .resume .experience{
     margin-top: 5vh;
-
 }
 .resume .experience > div:first-child .line1{
     width: 1px;
